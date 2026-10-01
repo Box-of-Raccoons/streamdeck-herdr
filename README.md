@@ -7,6 +7,12 @@ next to your other plugins.
 
 Requires herdr 0.9 (socket protocol 22), Stream Deck 7.1 or later, and macOS 13 or later.
 
+## Install
+
+Download `com.boxofraccoons.herdr.streamDeckPlugin` from the
+[latest release](https://github.com/Box-of-Raccoons/streamdeck-herdr/releases/latest) and
+double-click it. To update, install a newer release the same way.
+
 ## Actions
 
 | Action | Where | What it does |
@@ -48,3 +54,14 @@ node scripts/make-images.ts                       # regenerate icons
 ```
 
 `herdr api schema --json` is the reference for the socket API; the docs page lags behind it.
+
+## Release
+
+Bump `version` in `package.json` and the manifest's `Version`, merge to `main`, then tag
+and push `vX.Y.Z`. The Release workflow checks the tag against `package.json`, runs the
+checks, packs the plugin and publishes it as a GitHub release.
+
+## License
+
+MIT
+
