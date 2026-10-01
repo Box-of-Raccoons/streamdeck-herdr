@@ -88,3 +88,14 @@ Open:
 - Whether sdpi-file can pick a .app bundle (same question as the usage gauges).
 - herdr-marketplace packaging, if wanted later.
 - Name: "herdr" in a Marketplace listing may need herdr's permission.
+
+### 2026-10-01, on the device
+
+Hardy confirmed on the Stream Deck+: the dials work; Needs You shows orange for a blocked
+agent and jumps to it; green appears when an agent finishes while he is on another tab, and
+pressing jumps back and clears it. herdr semantics learned: `done` only appears when an agent
+finishes unviewed. Finishing in the focused tab goes straight to `idle`, and viewing a done
+tab turns it `idle` without changing `state_change_seq`.
+
+Still untried on the device: next/previous/new tab, stop, prompt, zoom, layout capture and
+replay, the Terminal app picker.
