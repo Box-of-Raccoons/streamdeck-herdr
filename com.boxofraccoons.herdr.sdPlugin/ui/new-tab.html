@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>New Tab Settings</title>
+	<meta charset="utf-8" />
+	<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+	<sdpi-item label="Folder">
+		<sdpi-textfield setting="folder" placeholder="Focused pane's folder"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Label">
+		<sdpi-textfield setting="label" placeholder="Folder name"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Start agent">
+		<sdpi-select setting="agent" default="none">
+			<option value="none">None (shell)</option>
+			<option value="claude">claude</option>
+			<option value="codex">codex</option>
+			<option value="gemini">gemini</option>
+			<option value="opencode">opencode</option>
+			<option value="cursor">cursor</option>
+			<option value="copilot">copilot</option>
+			<option value="amp">amp</option>
+			<option value="cline">cline</option>
+			<option value="kiro">kiro</option>
+			<option value="droid">droid</option>
+			<option value="grok">grok</option>
+			<option value="qwen">qwen</option>
+			<option value="pi">pi</option>
+			<option value="devin">devin</option>
+			<option value="agy">agy</option>
+			<option value="kimi">kimi</option>
+			<option value="hermes">hermes</option>
+			<option value="kilo">kilo</option>
+			<option value="qodercli">qodercli</option>
+			<option value="letta">letta</option>
+			<option value="maki">maki</option>
+			<option value="muse">muse</option>
+		</sdpi-select>
+	</sdpi-item>
+	<sdpi-item label="Terminal app">
+		<sdpi-file global setting="terminalApp" accept=".app" label="Choose App..."></sdpi-file>
+	</sdpi-item>
+	<sdpi-item label="Bring forward">
+		<sdpi-checkbox global setting="raise" default="true" label="Raise it after switching"></sdpi-checkbox>
+	</sdpi-item>
+	<sdpi-item>
+		<p style="margin:0;font-size:9pt;opacity:.7">Shared by every herdr key and dial. None chosen means Terminal.</p>
+	</sdpi-item>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Open Layout Settings</title>
+	<meta charset="utf-8" />
+	<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+	<sdpi-item label="Layout">
+		<sdpi-delegate setting="layoutSummary" invoke="capture" label="Capture"></sdpi-delegate>
+	</sdpi-item>
+	<sdpi-item>
+		<p style="margin:0;font-size:9pt;opacity:.7">Arrange a tab in herdr, focus it, then press Capture.</p>
+	</sdpi-item>
+	<sdpi-item label="Folder">
+		<sdpi-textfield setting="folder" placeholder="Keep captured folders"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Tab label">
+		<sdpi-textfield setting="label" placeholder="Layout"></sdpi-textfield>
+	</sdpi-item>
+	<sdpi-item label="Terminal app">
+		<sdpi-file global setting="terminalApp" accept=".app" label="Choose App..."></sdpi-file>
+	</sdpi-item>
+	<sdpi-item label="Bring forward">
+		<sdpi-checkbox global setting="raise" default="true" label="Raise it after switching"></sdpi-checkbox>
+	</sdpi-item>
+	<sdpi-item>
+		<p style="margin:0;font-size:9pt;opacity:.7">Shared by every herdr key and dial. None chosen means Terminal.</p>
+	</sdpi-item>
+</body>
+</html>
