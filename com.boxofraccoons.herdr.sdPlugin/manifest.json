@@ -1,0 +1,232 @@
+{
+	"Name": "herdr Control",
+	"Version": "0.1.0.0",
+	"Author": "Box of Raccoons",
+	"Actions": [
+		{
+			"Name": "Next Tab",
+			"UUID": "com.boxofraccoons.herdr.tab-next",
+			"Icon": "imgs/actions/tab-next/icon",
+			"Tooltip": "Focus the next tab in the current herdr workspace.",
+			"PropertyInspectorPath": "ui/common.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/tab-next/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Previous Tab",
+			"UUID": "com.boxofraccoons.herdr.tab-prev",
+			"Icon": "imgs/actions/tab-prev/icon",
+			"Tooltip": "Focus the previous tab in the current herdr workspace.",
+			"PropertyInspectorPath": "ui/common.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/tab-prev/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "New Tab",
+			"UUID": "com.boxofraccoons.herdr.tab-new",
+			"Icon": "imgs/actions/tab-new/icon",
+			"Tooltip": "Open a herdr tab in a folder, optionally starting an agent.",
+			"PropertyInspectorPath": "ui/new-tab.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/tab-new/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Needs You",
+			"UUID": "com.boxofraccoons.herdr.needs-you",
+			"Icon": "imgs/actions/needs-you/icon",
+			"Tooltip": "Agents waiting on input (orange) or done (green). Press to jump to the first.",
+			"PropertyInspectorPath": "ui/needs-you.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/needs-you/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Stop Agent",
+			"UUID": "com.boxofraccoons.herdr.agent-stop",
+			"Icon": "imgs/actions/agent-stop/icon",
+			"Tooltip": "Send Esc to the focused agent.",
+			"PropertyInspectorPath": "ui/common.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/agent-stop/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Send Prompt",
+			"UUID": "com.boxofraccoons.herdr.agent-prompt",
+			"Icon": "imgs/actions/agent-prompt/icon",
+			"Tooltip": "Send fixed text to the focused agent.",
+			"PropertyInspectorPath": "ui/prompt.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/agent-prompt/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Zoom Pane",
+			"UUID": "com.boxofraccoons.herdr.pane-zoom",
+			"Icon": "imgs/actions/pane-zoom/icon",
+			"Tooltip": "Toggle zoom on the focused pane.",
+			"PropertyInspectorPath": "ui/common.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/pane-zoom/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Open Layout",
+			"UUID": "com.boxofraccoons.herdr.layout",
+			"Icon": "imgs/actions/layout/icon",
+			"Tooltip": "Open a captured split layout as a new tab.",
+			"PropertyInspectorPath": "ui/layout.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/layout/key",
+					"ShowTitle": false
+				}
+			]
+		},
+		{
+			"Name": "Workspace Dial",
+			"UUID": "com.boxofraccoons.herdr.dial-workspace",
+			"Icon": "imgs/actions/dial-workspace/icon",
+			"Tooltip": "Turn to browse herdr workspaces; press to switch.",
+			"PropertyInspectorPath": "ui/common.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"Encoder": {
+				"layout": "layouts/browse.json",
+				"TriggerDescription": {
+					"Rotate": "Browse workspaces",
+					"Push": "Switch",
+					"Touch": "Switch"
+				}
+			},
+			"States": [
+				{
+					"Image": "imgs/actions/dial-workspace/key"
+				}
+			]
+		},
+		{
+			"Name": "Tab Dial",
+			"UUID": "com.boxofraccoons.herdr.dial-tab",
+			"Icon": "imgs/actions/dial-tab/icon",
+			"Tooltip": "Turn to browse tabs; press to switch.",
+			"PropertyInspectorPath": "ui/common.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"Encoder": {
+				"layout": "layouts/browse.json",
+				"TriggerDescription": {
+					"Rotate": "Browse tabs",
+					"Push": "Switch",
+					"Touch": "Switch"
+				}
+			},
+			"States": [
+				{
+					"Image": "imgs/actions/dial-tab/key"
+				}
+			]
+		},
+		{
+			"Name": "Agent Dial",
+			"UUID": "com.boxofraccoons.herdr.dial-agent",
+			"Icon": "imgs/actions/dial-agent/icon",
+			"Tooltip": "Turn to browse agents, those needing you first; press to focus.",
+			"PropertyInspectorPath": "ui/common.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"Encoder": {
+				"layout": "layouts/browse.json",
+				"TriggerDescription": {
+					"Rotate": "Browse agents",
+					"Push": "Switch",
+					"Touch": "Switch"
+				}
+			},
+			"States": [
+				{
+					"Image": "imgs/actions/dial-agent/key"
+				}
+			]
+		}
+	],
+	"Category": "herdr Control",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Drive herdr from Stream Deck: step through tabs, open tabs with agents, jump to agents that need you, and browse workspaces, tabs and agents on the dials.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "13"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "enabled"
+	},
+	"UUID": "com.boxofraccoons.herdr"
+}

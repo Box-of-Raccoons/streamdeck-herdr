@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Needs You Settings</title>
+	<meta charset="utf-8" />
+	<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+	<sdpi-item label="Show">
+		<sdpi-select setting="show" default="both">
+			<option value="both">Needs input and done</option>
+			<option value="blocked">Needs input only</option>
+			<option value="done">Done only</option>
+		</sdpi-select>
+	</sdpi-item>
+	<sdpi-item label="Terminal app">
+		<sdpi-file global setting="terminalApp" accept=".app" label="Choose App..."></sdpi-file>
+	</sdpi-item>
+	<sdpi-item label="Bring forward">
+		<sdpi-checkbox global setting="raise" default="true" label="Raise it after switching"></sdpi-checkbox>
+	</sdpi-item>
+	<sdpi-item>
+		<p style="margin:0;font-size:9pt;opacity:.7">Shared by every herdr key and dial. None chosen means Terminal.</p>
+	</sdpi-item>
+</body>
+</html>
